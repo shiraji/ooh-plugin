@@ -1,0 +1,37 @@
+<idea-plugin url="https://plugins.jetbrains.com/plugin/7848" version="2">
+    <id>com.github.shiraji.ooh</id>
+    <name>ooh</name>
+    <version>1.0.0</version>
+    <vendor email="isogai.shiraji@gmail.com" url="https://github.com/shiraji">Shiraji</vendor>
+
+    <description><![CDATA[
+        This plugin shows a notification that says ooh!<br/><br/>
+        <a href="https://github.com/shiraji/GradleConfirmation">GitHub</a> |
+        <a href="https://github.com/shiraji/GradleConfirmation/issues">Issues</a>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        IntelliJ plugin showing a notification
+
+        <p>1.0.0</p>
+        <ul>
+            <li>Initial release</li>
+        </ul>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="131"/>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action class="com.github.shiraji.ooh.OohAction"
+                id="OohAction"
+                text="Ooh!"
+        />
+    </actions>
+
+</idea-plugin>
