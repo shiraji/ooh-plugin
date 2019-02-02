@@ -19,3 +19,9 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+intellij {
+    pluginName = "Ooh! Plugin"
+    updateSinceUntilBuild = false
+    sameSinceUntilBuild = false
+}
